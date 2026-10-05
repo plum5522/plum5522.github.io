@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Aryan Bharti — Personal Profile</title>
+  <meta name="description" content="Personal profile of Aryan Bharti, B.Tech Information Technology student at Manipal Institute of Technology and software development intern." />
+  <meta name="author" content="Aryan Bharti" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">
+        <span class="brand-mark">AB</span>
+        <span class="brand-name">Aryan Bharti</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-theme">
+          <button class="theme-btn" id="themeBtn" aria-label="Switch to light theme" title="Switch theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2 12h2.6M19.4 12H22M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">Aryan Bharti</h1>
+          <p class="hero-role">
+            B.Tech Information Technology <span class="sep">·</span> Software Development Intern
+          </p>
+          <p class="hero-intro">
+            I'm a second-year IT undergraduate at <strong>Manipal Institute of Technology</strong> who likes
+            building things that reach real people — fraud detection for UPI users, voice payments for
+            feature-phone owners, and 3D rendering pipelines. I work mostly in C++, Python and Azure,
+            and I'm happiest somewhere between a hackathon deadline and a LeetCode problem.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="#experience">See my work</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><span class="stat-value">9.08</span><span class="stat-label">CGPA at MIT</span></li>
+            <li><span class="stat-value">94%</span><span class="stat-label">Class XII, DPS RKP</span></li>
+            <li><span class="stat-value">1st</span><span class="stat-label">Sarvam AI Track, HackPrix 3</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="images/profile.jpg"
+                 alt="Portrait photograph of Aryan Bharti"
+                 width="560" height="605" />
+          </div>
+          <p class="photo-caption">Manipal, India</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">01 — Who I am</p>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text card">
+            <p>
+              I'm an Information Technology student at Manipal Institute of Technology, currently in the
+              middle of a one-year software development internship at <strong>aiRender / Healthstream</strong>,
+              where I was selected as one of 11 finalists to work on AI-driven 3D holographic video conferencing.
+            </p>
+            <p>
+              Most of what I've built started at a hackathon. <strong>FraudShield India</strong> came out of asking
+              what happens to the 230 million people exposed to UPI scams, and <strong>SwaramPay</strong> came out of
+              asking what payments look like for someone without a smartphone. Both forced me to learn
+              things properly — event-driven backends, LLM classification across Hindi and Hinglish,
+              speaker-verification models — rather than just well enough for a demo.
+            </p>
+            <p>
+              Outside coursework I practise DSA in C++ on LeetCode, and I've spent time as a volunteer
+              educator with the <strong>Veer Eklavya Foundation</strong>, teaching and mentoring school students in Bihar.
+              Before all this I co-authored a paper on cosmic-ray detection using plastic scintillators and SiPMs,
+              which I presented at the Harvard Science Research Conference.
+            </p>
+          </div>
+
+          <aside class="about-facts">
+            <h3 class="facts-title">Quick facts</h3>
+            <dl class="facts-list">
+              <div><dt>Location</dt><dd>Manipal, Karnataka, India</dd></div>
+              <div><dt>Degree</dt><dd>B.Tech, Information Technology</dd></div>
+              <div><dt>Graduating</dt><dd>May 2028</dd></div>
+              <div><dt>Focus</dt><dd>Backend, cloud &amp; applied AI</dd></div>
+              <div><dt>Languages</dt><dd>English, Hindi</dd></div>
+              <div><dt>Open to</dt><dd>Internships &amp; collaborations</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">02 — Academics</p>
+          <h2>Education</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="card timeline-card">
+              <div class="tl-head">
+                <div>
+                  <h3>Manipal Institute of Technology</h3>
+                  <p class="tl-sub">B.Tech, Information Technology</p>
+                </div>
+                <div class="tl-meta">
+                  <span class="badge">Expected May 2028</span>
+                  <span class="tl-place">Manipal, India</span>
+                </div>
+              </div>
+              <p class="tl-grade"><strong>CGPA 9.08 / 10</strong> · MIT Achiever's Scholarship for academic excellence</p>
+              <div class="chip-row" aria-label="Relevant coursework">
+                <span class="chip">Data Structures</span>
+                <span class="chip">Algorithm Analysis</span>
+                <span class="chip">Operating Systems</span>
+                <span class="chip">Database Systems</span>
+                <span class="chip">Artificial Intelligence</span>
+                <span class="chip">Computer Networks</span>
+                <span class="chip">OOP (Java, C++)</span>
+                <span class="chip">Computer Architecture</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="card timeline-card">
+              <div class="tl-head">
+                <div>
+                  <h3>Delhi Public School — R.K. Puram</h3>
+                  <p class="tl-sub">Class XII · PCM with Computer Science</p>
+                </div>
+                <div class="tl-meta">
+                  <span class="badge">May 2023</span>
+                  <span class="tl-place">New Delhi, India</span>
+                </div>
+              </div>
+              <p class="tl-grade"><strong>94%</strong> · Green Badge for Academic Excellence</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE + PROJECTS ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">03 — Professional</p>
+          <h2>Experience</h2>
+        </div>
+
+        <article class="card exp-card">
+          <div class="tl-head">
+            <div>
+              <h3>aiRender / Healthstream</h3>
+              <p class="tl-sub">Software Development Intern</p>
+            </div>
+            <div class="tl-meta">
+              <span class="badge badge-live">July 2026 — Present</span>
+              <span class="tl-place">Remote</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Selected among <strong>11 finalists</strong> for a one-year internship on AI-driven 3D holographic video conferencing at aiRender Technology.</li>
+            <li>Working on 3D reconstruction and rendering pipeline components for real-time video transmission; specific objectives confidential under NDA.</li>
+          </ul>
+        </article>
+
+        <h3 class="sub-head">Selected Projects</h3>
+
+        <div class="project-grid">
+          <article class="card project-card">
+            <div class="proj-top">
+              <h4>FraudShield India</h4>
+              <span class="badge">Hackathon · 2026</span>
+            </div>
+            <p class="proj-tag">Real-Time UPI Fraud Detection <span class="sep">·</span> <em>Integration Lead</em></p>
+            <ul class="bullets">
+              <li>Built the Azure Functions backend powering real-time UPI scam classification for <strong>230M+ at-risk users</strong>, detecting 8 scam categories across Hindi, Hinglish and English via Azure OpenAI (o4-mini).</li>
+              <li>Integrated an Android SMS scanner and a live web dashboard through a shared API, delivering real-time scam alerts and an India-wide threat heatmap; automated deployments with GitHub Actions CI/CD.</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">Python</span><span class="chip">Azure Functions</span>
+              <span class="chip">Azure OpenAI</span><span class="chip">Event Hub</span>
+              <span class="chip">GitHub Actions</span>
+            </div>
+            <a class="link-out" href="https://github.com/plum5522" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+
+          <article class="card project-card">
+            <div class="proj-top">
+              <h4>SwaramPay</h4>
+              <span class="badge badge-win">Winner · Sarvam AI Track</span>
+            </div>
+            <p class="proj-tag">Voice-First UPI Payments Assistant <span class="sep">·</span> <em>Full-Stack Developer</em></p>
+            <ul class="bullets">
+              <li>Built the Flask backend, REST APIs and web portal for a voice-first UPI app enabling wallet-to-bank transfers and balance checks entirely by voice over a basic phone call — no smartphone needed — in <strong>9 Indian languages</strong> via Twilio.</li>
+              <li>Led the voice-biometric security layer using SpeechBrain ECAPA-TDNN embeddings with cosine-similarity matching, calibrated on live-call data to separate genuine users from impostors, plus a spoken-PIN step for high-value transfers.</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">Python</span><span class="chip">Flask</span>
+              <span class="chip">Twilio</span><span class="chip">SpeechBrain</span>
+              <span class="chip">Sarvam AI</span>
+            </div>
+            <a class="link-out" href="https://github.com/plum5522" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">04 — Toolkit</p>
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="card skill-card">
+            <h3>
+              <span class="skill-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m8.5 8-4.5 4 4.5 4M15.5 8l4.5 4-4.5 4M13.5 5.5l-3 13"/></svg>
+              </span> Languages
+            </h3>
+            <div class="chip-row">
+              <span class="chip chip-accent">C++</span><span class="chip chip-accent">C</span>
+              <span class="chip chip-accent">Java</span><span class="chip chip-accent">Python</span>
+              <span class="chip chip-accent">SQL</span><span class="chip chip-accent">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="card skill-card">
+            <h3>
+              <span class="skill-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7 18.5a4 4 0 0 1-.5-7.97 5.5 5.5 0 0 1 10.6-1.5A3.75 3.75 0 0 1 17.5 18.5z"/></svg>
+              </span> Cloud &amp; DevOps
+            </h3>
+            <div class="chip-row">
+              <span class="chip chip-accent">Azure Functions</span><span class="chip chip-accent">Azure OpenAI</span>
+              <span class="chip chip-accent">Event Hub</span><span class="chip chip-accent">GitHub Actions</span>
+              <span class="chip chip-accent">CI/CD</span>
+            </div>
+          </div>
+
+          <div class="card skill-card">
+            <h3>
+              <span class="skill-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.4M12 18.8v2.4M4.5 12H2.1M21.9 12h-2.4M6.7 6.7 5 5M19 19l-1.7-1.7M6.7 17.3 5 19M19 5l-1.7 1.7"/></svg>
+              </span> Frameworks &amp; Tools
+            </h3>
+            <div class="chip-row">
+              <span class="chip chip-accent">Flask</span><span class="chip chip-accent">REST APIs</span>
+              <span class="chip chip-accent">JavaFX</span><span class="chip chip-accent">MySQL</span>
+              <span class="chip chip-accent">JDBC</span><span class="chip chip-accent">Git</span>
+              <span class="chip chip-accent">HTML5 Canvas</span>
+            </div>
+          </div>
+
+          <div class="card skill-card">
+            <h3>
+              <span class="skill-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2.8 21 7.4v9.2L12 21.2 3 16.6V7.4z"/><path d="M12 12.1 21 7.4M12 12.1v9.1M12 12.1 3 7.4"/></svg>
+              </span> Core Concepts
+            </h3>
+            <div class="chip-row">
+              <span class="chip chip-accent">Data Structures &amp; Algorithms</span>
+              <span class="chip chip-accent">OS Internals</span>
+              <span class="chip chip-accent">ACID Transactions</span>
+              <span class="chip chip-accent">Event-Driven Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTERESTS ============ -->
+    <section class="section" id="interests">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">05 — Away from the keyboard</p>
+          <h2>Interests &amp; Hobbies</h2>
+        </div>
+
+        <div class="interest-grid">
+          <article class="card interest-card">
+            <span class="interest-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6.5 9.5h.01M10 9.5h.01M13.5 9.5h.01M17 9.5h.01M6.5 12.8h.01M10 12.8h.01M13.5 12.8h.01M17 12.8h.01M8.2 15.6h7.6"/></svg>
+            </span>
+            <h3>Competitive Programming</h3>
+            <p>
+              Regular on LeetCode as <a href="https://leetcode.com/plum5522" target="_blank" rel="noopener">plum5522</a>,
+              working through data structures and algorithms in C++. It's the part of my week that keeps
+              the fundamentals sharp.
+            </p>
+          </article>
+
+          <article class="card interest-card">
+            <span class="interest-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="fill"><path d="M12 2.6c-1.9 2.6-7.4 6.1-7.4 10.3a4 4 0 0 0 6.4 3.2c-.2 1.9-.9 3.4-2 4.3h6c-1.1-.9-1.8-2.4-2-4.3a4 4 0 0 0 6.4-3.2c0-4.2-5.5-7.7-7.4-10.3z"/></svg>
+            </span>
+            <h3>Poker</h3>
+            <p>
+              I enjoy the maths behind the game far more than the bluffing — pot odds, expected value and
+              reading incomplete information. It's probability theory you can actually sit down and play.
+            </p>
+          </article>
+
+          <article class="card interest-card">
+            <span class="interest-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="7" cy="17.5" r="2.8"/><circle cx="18" cy="15.5" r="2.8"/><path d="M9.8 17.5V6.6l11-2.2v11.1"/><path d="M9.8 9.4 20.8 7.2"/></svg>
+            </span>
+            <h3>Music</h3>
+            <p>
+              Music runs through most of my working hours and a fair few of my free ones. Discovering new
+              artists and building playlists is my default way to unwind between deadlines.
+            </p>
+          </article>
+        </div>
+
+        <div class="card achievements">
+          <h3 class="sub-head sub-head-tight">Achievements &amp; Publications</h3>
+          <ul class="bullets bullets-lg">
+            <li><strong>Winner — Sarvam AI Track, HackPrix Season 3</strong> for SwaramPay, a voice-first UPI payments assistant.</li>
+            <li><strong>MIT Achiever's Scholarship</strong>, awarded for academic excellence at Manipal Institute of Technology.</li>
+            <li><strong>Publication:</strong> "Cosmic Ray Detection by Plastic Scintillator and SiPM," <em>Journal of Young Physicists</em> (2023); presented at the Harvard Science Research Conference.</li>
+            <li><strong>Volunteer Educator, Veer Eklavya Foundation</strong> — taught and mentored school students in Bihar.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">06 — Say hello</p>
+          <h2>Contact</h2>
+          <p class="section-lead">
+            The fastest way to reach me is email, but I'm active on all of these.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="card contact-card" href="mailto:aryanbharti165@gmail.com">
+            <span class="contact-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 6.5L21 6"/></svg>
+            </span>
+            <span class="contact-body">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">aryanbharti165@gmail.com</span>
+            </span>
+          </a>
+
+          <a class="card contact-card" href="tel:+917033490001">
+            <span class="contact-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5z"/></svg>
+            </span>
+            <span class="contact-body">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 70334 90001</span>
+            </span>
+          </a>
+
+          <a class="card contact-card" href="https://github.com/plum5522" target="_blank" rel="noopener">
+            <span class="contact-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="fill"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+            </span>
+            <span class="contact-body">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/plum5522</span>
+            </span>
+          </a>
+
+          <a class="card contact-card" href="https://www.linkedin.com/in/aryan-bharti-798587239" target="_blank" rel="noopener">
+            <span class="contact-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9.5 9h3.8v1.7h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.6 4.75 6V21h-4v-5.3c0-1.26-.02-2.9-1.78-2.9-1.78 0-2.05 1.38-2.05 2.8V21h-4z"/></svg>
+            </span>
+            <span class="contact-body">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">aryan-bharti-798587239</span>
+            </span>
+          </a>
+
+          <a class="card contact-card" href="https://leetcode.com/plum5522" target="_blank" rel="noopener">
+            <span class="contact-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14.5 4 7.8 10.8a3.2 3.2 0 0 0 0 4.5l3 3a3.2 3.2 0 0 0 4.5 0l2-2"/><path d="M9.5 13.5h9"/></svg>
+            </span>
+            <span class="contact-body">
+              <span class="contact-label">LeetCode</span>
+              <span class="contact-value">leetcode.com/plum5522</span>
+            </span>
+          </a>
+
+          <div class="card contact-card contact-static">
+            <span class="contact-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s7-5.3 7-11a7 7 0 1 0-14 0c0 5.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            </span>
+            <span class="contact-body">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Manipal, Karnataka, India</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">Aryan Bharti</p>
+      <p class="footer-note">Built with hand-written HTML &amp; CSS · Hosted on GitHub Pages</p>
+      <p class="footer-copy">&copy; <span id="year">2026</span> Aryan Bharti. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('themeBtn');
+
+      // Restore saved theme (falls back to the dark default if storage is unavailable).
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
+      } catch (e) {}
+
+      function syncLabel() {
+        var isDark = root.getAttribute('data-theme') !== 'light';
+        btn.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+      }
+      syncLabel();
+
+      btn.addEventListener('click', function () {
+        var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        root.setAttribute('data-theme', next);
+        syncLabel();
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+
+      // Mobile menu
+      var toggle = document.getElementById('navToggle');
+      var links = document.getElementById('navLinks');
+      toggle.addEventListener('click', function () {
+        var open = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+      links.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') {
+          links.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Reveal sections as they scroll into view
+      var items = document.querySelectorAll('.section, .hero-inner');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08 });
+        items.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
+      }
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+
+</body>
+</html>
